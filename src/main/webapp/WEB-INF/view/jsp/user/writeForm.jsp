@@ -10,105 +10,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 화면</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/writeForm.css" type="text/css">
 
-    <style>
-        body {
-            min-height: 100vh;
-        }
-        #writeBoxTitle {
-            color:#000000;
-            font-weight: bold;
-            font-size: 32px;
-            text-transform: uppercase;
-            padding: 5px;
-            margin-bottom: 20px;
-        }
-        #loginBoxTitle img {
-            display: block;
-            margin: 0 auto;
-        }
-
-        .input-form {
-            max-width: 680px;
-
-            margin-top: 80px;
-            padding: 32px;
-
-            background: #fff;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-            -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
-        }
-        .write-login{
-            margin-top: 20px;
-            float: right;
-            font-size: 1.1em;
-        }
-        #relogin{
-            color:rgb(43, 43, 81);
-        }
-        #relogin:hover{
-            text-decoration: underline;
-        }
-        label {
-            font-size: 18px;
-            line-height: 2rem;
-            padding: 0.2em 0.4em;
-        }
-
-        [type="radio"]:hover {
-            cursor: pointer;
-        }
-        [type="checkbox"]:hover {
-            cursor: pointer;
-        }
-
-        .rank{
-            font-size: 0.8em;
-        }
-        .ridge{
-            border:5px ridge;
-        }
-        #zipcode {
-            width: 150px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        #addrbuttion{
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        #addr2{
-            margin-top: 10px;
-        }
-        .skill1{
-            margin-left: 30px;
-        }
-        .skill2{
-            margin-left: 30px;
-        }
-
-
-
-
-    </style>
 </head>
 <body>
 <div class="container">
     <div class="input-form-backgroud row">
         <div class="input-form col-md-12 mx-auto">
-            <div id="loginBoxTitle"><img src="../image/sutdi.png" width="130" height="90"></div>
+            <div id="loginBoxTitle"><img src="../../image/sutdi.png" width="130" height="90"></div>
             <br>
             <form class="validation-form" novalidate>
                 <div class="row">
@@ -150,7 +65,6 @@
                 </div>
                 <label class="rank">가입 직급을 선택해주세요</label><br>
                 <div>
-
                     <input type="radio" class="btn-check" name="options-base" id="manager" autocomplete="off">
                     <label class="btn" for="manager">팀장</label>
 

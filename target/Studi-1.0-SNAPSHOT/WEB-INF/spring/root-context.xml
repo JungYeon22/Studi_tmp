@@ -7,6 +7,7 @@
 
     <!-- DTO, Service, config, .. Web(url)과 관련없는 bean-->
     <context:component-scan base-package="spring.conf"/>
+    <context:component-scan base-package="user.*"/>
 
     <!-- DAO와 Mapper.xml 연결-->
     <mybatis-spring:scan base-package="user.dao"/>
