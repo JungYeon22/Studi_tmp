@@ -48,7 +48,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">회원정보수정</a></li>
-                        <li><a class="dropdown-item" href="#">내 프로필</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/user/myPage">내 프로필</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">로그아웃&emsp;&emsp;
                             <i class="fa-solid fa-arrow-right-from-bracket"></i>
