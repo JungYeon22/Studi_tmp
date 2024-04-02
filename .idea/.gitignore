@@ -6,3 +6,7 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/target/Studi-1.0-SNAPSHOT/META-INF/
+/out/
+/target/
+
