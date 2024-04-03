@@ -13,25 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myPage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <style>
 
+    <link rel="stylesheet" href="../../css/header.css">
+    <style>
         .btn:hover{
             background-color: rgb(222, 222, 222);
-        }
-        nav {
-            display: inline-block;
-            height: 70px;
-            text-align: right;
-
         }
 
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
 
-<hr/>
+<%@ include file="../include/header.jsp"%>
 <!-- ########################################################################################################################### -->
-<div class="container">
+<div class="container mt-5">
     <main>
         <div class="py-5 text-center">
             <h2>마이 페이지</h2>
