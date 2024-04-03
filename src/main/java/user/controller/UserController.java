@@ -22,4 +22,14 @@ public class UserController {
     public String introduceForm() {
         return "user/introduceForm";
     }
+
+    @GetMapping(value = "/myPage")
+    public String myPage(){
+        return "user/myPage";
+    }
+
+    @GetMapping(value = "/managerPage")
+    public String managerPage(){
+        return "user/managerPage";
+    }
 }
