@@ -16,14 +16,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/writeForm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/writeForm.css">
+
 
 </head>
 <body>
+
 <div class="container">
     <div class="input-form-backgroud row">
         <div class="input-form col-md-12 mx-auto">
-            <div id="loginBoxTitle"><img src="../../image/sutdi.png" width="130" height="90"></div>
+            <div id="loginBoxTitle"><img src="/image/sutdi.png" width="130" height="90"></div>
             <br>
             <form class="validation-form" novalidate>
                 <div class="row">
@@ -39,7 +41,6 @@
                     <div class="col-md-6 mb-3">
                         <label for="id">아이디</label>
                         <input type="text" class="form-control" id="id" placeholder="아이디입력" value="" required>
-                        <button type="button" class="btn btn-outline-secondary" style="margin-top: 10px;">중복확인</button>
                         <div class="invalid-feedback">
                             아이디를 입력해주세요.
                         </div>
@@ -63,14 +64,6 @@
                         </div>
                     </div>
                 </div>
-                <label class="rank">가입 직급을 선택해주세요</label><br>
-                <div>
-                    <input type="radio" class="btn-check" name="options-base" id="manager" autocomplete="off">
-                    <label class="btn" for="manager">팀장</label>
-
-                    <input typ e="radio" class="btn-check" name="options-base" id="member" autocomplete="off">
-                    <label class="btn" for="member">팀원</label>
-                </div>
 
                 <div class="mb-3">
                     <label for="phone">핸드폰</label>
@@ -79,36 +72,38 @@
                         핸드폰 번호를 입력해주세요.
                     </div>
                 </div>
-                <%--<div >
+
+                <div>
                     <label for="skill">기술스택</label><br>
                     <div class="skill1">
-                        <input type="checkbox" class="btn-check" id="c"  autocomplete="off">
-                        <label class="btn" for="btn-check-1">C</label>
-                        <input type="checkbox" class="btn-check" id="c3"  autocomplete="off">
-                        <label class="btn" for="btn-check-2">C#</label>
-                        <input type="checkbox" class="btn-check" id="cpp"  autocomplete="off">
-                        <label class="btn" for="btn-check-3">C++</label>
-                        <input type="checkbox" class="btn-check" id="python"  autocomplete="off">
-                        <label class="btn" for="btn-check-4">Python</label>
-                        <input type="checkbox" class="btn-check" id="java"  autocomplete="off">
-                        <label class="btn" for="btn-check-5">JAVA</label>
-                        <input type="checkbox" class="btn-check" id="javascript"  autocomplete="off">
-                        <label class="btn" for="btn-check-6">javascript</label>
+                        <input type="checkbox" class="form-check-input" id="c"  autocomplete="off">
+                        <label class="btn" for="c">C</label>
+                        <input type="checkbox" class="form-check-input" id="c#"  autocomplete="off">
+                        <label class="btn" for="c#">C#</label>
+                        <input type="checkbox" class="form-check-input" id="cpp"  autocomplete="off">
+                        <label class="btn" for="cpp">C++</label>
+                        <input type="checkbox" class="form-check-input" id="python"  autocomplete="off">
+                        <label class="btn" for="python">Python</label>
+                        <input type="checkbox" class="form-check-input" id="java"  autocomplete="off">
+                        <label class="btn" for="java">JAVA</label>
+                        <input type="checkbox" class="form-check-input" id="javascript"  autocomplete="off">
+                        <label class="btn" for="javascript">javascript</label>
                     </div>
                     <div class="skill2">
-                        <input type="checkbox" class="btn-check" id="kotlin"  autocomplete="off">
-                        <label class="btn" for="btn-check-7">kotlin</label>
-                        <input type="checkbox" class="btn-check" id="go"  autocomplete="off">
-                        <label class="btn" for="btn-check-8">Go</label>
-                        <input type="checkbox" class="btn-check" id="mysql"  autocomplete="off">
-                        <label class="btn" for="btn-check-9">MySQL</label>
-                        <input type="checkbox" class="btn-check" id="oracle"  autocomplete="off">
-                        <label class="btn" for="btn-check-10">Oracle</label>
+                        <input type="checkbox" class="form-check-input" id="kotlin"  autocomplete="off">
+                        <label class="btn" for="kotlin">kotlin</label>
+                        <input type="checkbox" class="form-check-input" id="go"  autocomplete="off">
+                        <label class="btn" for="go">Go</label>
+                        <input type="checkbox" class="form-check-input" id="mysql"  autocomplete="off">
+                        <label class="btn" for="mysql">MySQL</label>
+                        <input type="checkbox" class="form-check-input" id="oracle"  autocomplete="off">
+                        <label class="btn" for="oracle">Oracle</label>
                     </div>
                 </div>
 
---%>
-                <div class="mb-3">
+
+
+                <div class="mb-4">
                     <label for="email">이메일</label>
                     <input type="email" class="form-control" id="email" placeholder="you@email.com" required>
                     <div class="invalid-feedback">
@@ -116,16 +111,22 @@
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label>주소</label><br>
-                    <input type="text"  class="form-control" id="zipcode" placeholder="135-152" disabled>
-                    <input type="button" class="btn btn-outline-secondary" id="addrbuttion"onclick = "" value="우편번호검색" ><br>
-                    <input type="text"  class="form-control" id="addr1"  placeholder="서울특별시 강남구" />
+
+                <div class="col-md-6 mb-3">
+                    <label for="address">주소</label><br>
+                    <div>
+                        <input type="text"   id="zipcode" placeholder="135-152" disabled/>
+                        <button type="button "class="btn btn-outline-secondary" id="addrbutton"onclick = "">우편번호검색</button>
+                    </div>
+
+                    <input type="text"  class="form-control" id="addr1"  placeholder="서울특별시 강남구" style="margin-top: 10px;"/>
                     <input type="text" class="form-control" id="addr2"  placeholder="상세주소"/>
                     <div class="invalid-feedback">
                         주소를 입력해주세요.
                     </div>
+
                 </div>
+
 
 
                 <hr class="mb-4">
@@ -135,7 +136,7 @@
                 </div>
 
                 <div class="mb-4"></div>
-                <button class="btn btn-outline-info btn btn-block" type="submit">가입 완료</button>
+                <button type="button" class="btn btn-outline-dark btn-lg">가입 완료</button>
                 <p class="write-login"> 이미 studi 회원이신가요? <a type="button" id="relogin">로그인</a></p>
             </form>
         </div>
@@ -144,6 +145,7 @@
         <p class="mb-1">&copy; studi</p>
     </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
         const forms = document.getElementsByClassName('validation-form');
@@ -161,5 +163,4 @@
     }, false);
 </script>
 </body>
-
 </html>
