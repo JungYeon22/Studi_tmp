@@ -17,6 +17,12 @@ public class UserController {
         return "user/writeForm";
     }
 
+
+    @GetMapping(value = "/introduceForm")
+    public String introduceForm() {
+        return "user/introduceForm";
+    }
+
     @GetMapping(value = "/myPage")
     public String myPage(){
         return "user/myPage";
