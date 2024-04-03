@@ -16,4 +16,10 @@ public class UserController {
     public String writeForm(){
         return "user/writeForm";
     }
+
+
+    @GetMapping(value = "/introduceForm")
+    public String introduceForm() {
+        return "user/introduceForm";
+    }
 }
