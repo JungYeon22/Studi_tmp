@@ -22,7 +22,7 @@
 <%@ include file="../include/header.jsp"%>
 
     <div class="container">
-        <div class="input-form-backgroud row">
+        <div class="input-form-background row">
 
             <div class="input-form col-md-12 mx-auto">
 
@@ -50,10 +50,6 @@
                         <button class="btn btn-outline-dark" type="button" id="writebtn">회원가입</button>
                     </div>
                 </form>
-
-
-
-
                 <hr>
 
                 <form class="social-login-form" novalidate>
