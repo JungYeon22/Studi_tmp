@@ -19,9 +19,7 @@ public class UserController {
 
 
     @GetMapping(value = "/introduceForm")
-    public String introduceForm() {
-        return "user/introduceForm";
-    }
+    public String introduceForm() { return "user/introduceForm"; }
 
     @GetMapping(value = "/myPage")
     public String myPage(){
@@ -32,4 +30,6 @@ public class UserController {
     public String managerPage(){
         return "user/managerPage";
     }
+
+
 }
